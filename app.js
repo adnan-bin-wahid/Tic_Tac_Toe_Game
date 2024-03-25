@@ -29,8 +29,27 @@ boxes.forEach((box)=>{
         checkWinner();
     })
 })
+
+
 // console.log("hehehehe");
 // for(pattern of winningPattern){
 //     console.log(boxes[pattern[0]],boxes[pattern[1]],boxes[pattern[2]]);
 // }
+
+let checkWinner=()=>{
+    for(pattern of winningPattern){
+        // console.log(pattern[0],pattern[1],pattern[2]);
+        // console.log(boxes[pattern[0]],boxes[pattern[1]],boxes[pattern[2]]);
+        
+        let position1 = boxes[pattern[0]].innerText;
+        let position2 = boxes[pattern[1]].innerText;
+        let position3 = boxes[pattern[2]].innerText;
+
+        if(position1 !=="" && position2 !=="" && position3 !==""){
+            if(position1 === position2 && position2 === position3){
+                console.log("Winner");
+            }
+        }
+    }
+}
 
