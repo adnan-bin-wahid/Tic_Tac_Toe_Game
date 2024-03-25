@@ -34,12 +34,13 @@ body{
     box-shadow: 0 0 1rem rgba(0,0,0,.3) ;
     font-size: 8vmin;
     color: #bc4749;
+    background-color: #fff1d0;
 }
 
 #reset{
     padding: 1rem;
     font-size: 1.25;
-    background-color: #b7b7a4;
+    background-color: #e8e8e4;
     border-radius: 1rem;
-    border:#0a9396;
+    border:#fae1dd;
 }
